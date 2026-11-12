@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/*
+  Identidad corporativa del instituto.
+  Cada color queda disponible como clase de Tailwind: bg-tinta, text-andino, border-maiz, etc.
+  Si la institución cambia sus colores, solo se editan estos valores.
+*/
+@theme {
+  --color-tinta: #0f2a3d;        /* azul profundo: barras, títulos, fondos oscuros */
+  --color-tinta-claro: #1b3f59;
+  --color-andino: #136f63;       /* verde institucional: botones y acciones principales */
+  --color-andino-oscuro: #0e564d;
+  --color-andino-suave: #e3f1ee;
+  --color-maiz: #e3b23c;         /* dorado: acentos y elementos destacados */
+  --color-maiz-suave: #fbf3dc;
+  --color-niebla: #f3f6f5;       /* fondo general */
+  --color-pizarra: #24323d;      /* texto principal */
+  --color-gris: #5b6b76;         /* texto secundario */
+  --color-linea: #d9e1e4;        /* bordes */
+
+  --font-titulo: "Bricolage Grotesque Variable", "Segoe UI", system-ui, sans-serif;
+  --font-texto: "Figtree Variable", "Segoe UI", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-texto);
+    color: var(--color-pizarra);
+    background: var(--color-niebla);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-titulo);
+    color: var(--color-tinta);
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-maiz);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Al imprimir el boletín solo se muestra el contenido, sin menús */
+@media print {
+  .no-imprimir {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+  }
+}
