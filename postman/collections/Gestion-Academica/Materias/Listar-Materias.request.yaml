@@ -1,0 +1,8 @@
+$kind: http-request
+name: Listar Materias
+order: 2000
+method: GET
+url: '{{baseUrl}}/api/materias'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'

@@ -1,0 +1,23 @@
+$kind: http-request
+name: Actualizar Estudiante
+order: 4000
+method: PUT
+url: '{{baseUrl}}/api/estudiantes/{{id}}'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "idEstudiante": "EST001",
+      "nombreEstudiante": "Juan Pérez Actualizado",
+      "fechaIngreso": "2024-01-15",
+      "genero": "M",
+      "celular": 3001234567,
+      "correo": "juan.perez@email.com",
+      "activo": true,
+      "estado": "Activo"
+    }

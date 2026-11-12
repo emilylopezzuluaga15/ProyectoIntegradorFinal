@@ -1,0 +1,8 @@
+$kind: http-request
+name: Listar Estudiantes
+order: 2000
+method: GET
+url: '{{baseUrl}}/api/estudiantes'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'

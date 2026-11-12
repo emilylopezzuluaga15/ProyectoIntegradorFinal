@@ -1,0 +1,4 @@
+$kind: collection
+description: Pruebas de la API de inventario. Ejecutar las peticiones en orden, con la base de datos vacía, para que los ids coincidan.
+variables:
+  baseUrl: http://localhost:8080

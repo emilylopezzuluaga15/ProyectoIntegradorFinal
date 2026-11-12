@@ -1,0 +1,16 @@
+$kind: http-request
+name: "18 Actualizar movimiento 2: salida de 8 (200, stock pasa a 22)"
+url: "{{baseUrl}}/api/movimientos"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "id": 2,
+      "producto": { "id": 1 },
+      "cantidad": 8,
+      "tipo": "SALIDA"
+    }
+order: 10000

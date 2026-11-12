@@ -1,0 +1,19 @@
+$kind: http-request
+name: Actualizar Asistencia
+order: 4000
+method: PUT
+url: '{{baseUrl}}/api/asistencia/{{id}}'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "fechaAsistencia": "2024-05-10",
+      "asistio": false,
+      "idEstudiante": "EST001",
+      "idGrupo": "GRP001"
+    }

@@ -1,0 +1,8 @@
+$kind: collection
+name: 'Gestión Académica'
+description: 'API de Gestión Académica en localhost:8080. Primero ejecuta Auth > Login, copia el token de la respuesta en la variable token de la colección y luego usa las demás peticiones.'
+variables:
+  - key: baseUrl
+    value: 'http://localhost:8080'
+  - key: token
+    value: ''

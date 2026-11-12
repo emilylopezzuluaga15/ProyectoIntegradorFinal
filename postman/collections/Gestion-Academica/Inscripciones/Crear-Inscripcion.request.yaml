@@ -1,0 +1,19 @@
+$kind: http-request
+name: Crear Inscripcion
+order: 1000
+method: POST
+url: '{{baseUrl}}/api/inscripciones'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "anioInscripcion": 2024,
+      "cohorte": 1,
+      "idEstudiante": "EST001",
+      "idGrupo": "GRP001"
+    }

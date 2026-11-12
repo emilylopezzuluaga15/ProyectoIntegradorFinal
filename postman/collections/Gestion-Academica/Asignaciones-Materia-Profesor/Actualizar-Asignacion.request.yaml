@@ -1,0 +1,18 @@
+$kind: http-request
+name: Actualizar Asignacion
+order: 4000
+method: PUT
+url: '{{baseUrl}}/api/asignaciones-materia-profesor/{{id}}'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "idProfesor": "PROF001",
+      "idGrupo": "GRP001",
+      "idMateria": "MAT001"
+    }

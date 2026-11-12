@@ -1,0 +1,8 @@
+$kind: http-request
+name: Eliminar Nota
+order: 5000
+method: DELETE
+url: '{{baseUrl}}/api/notas/{{id}}'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'

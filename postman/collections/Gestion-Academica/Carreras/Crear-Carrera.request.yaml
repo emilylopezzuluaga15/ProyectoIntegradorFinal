@@ -1,0 +1,17 @@
+$kind: http-request
+name: Crear Carrera
+order: 1000
+method: POST
+url: '{{baseUrl}}/api/carreras'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "idCarrera": "CAR001",
+      "nombreCarrera": "Ingeniería de Sistemas"
+    }

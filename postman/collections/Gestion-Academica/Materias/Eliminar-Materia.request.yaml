@@ -1,0 +1,8 @@
+$kind: http-request
+name: Eliminar Materia
+order: 5000
+method: DELETE
+url: '{{baseUrl}}/api/materias/{{id}}'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'

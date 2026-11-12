@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{baseUrl}}/api/productos"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "nombre": "Mouse",
+      "descripcion": "Mouse inalámbrico",
+      "precio": 45000,
+      "stock": 0
+    }
+order: 2000

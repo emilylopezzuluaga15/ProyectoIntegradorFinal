@@ -1,0 +1,8 @@
+$kind: http-request
+name: Eliminar Estudiante
+order: 5000
+method: DELETE
+url: '{{baseUrl}}/api/estudiantes/{{id}}'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'

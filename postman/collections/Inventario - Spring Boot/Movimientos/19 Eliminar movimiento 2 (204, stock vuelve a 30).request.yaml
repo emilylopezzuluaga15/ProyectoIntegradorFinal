@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{baseUrl}}/api/movimientos/2"
+method: DELETE
+order: 11000

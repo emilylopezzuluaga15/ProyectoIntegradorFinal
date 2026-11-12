@@ -1,0 +1,18 @@
+$kind: http-request
+name: Crear MovimientoNota
+order: 1000
+method: POST
+url: '{{baseUrl}}/api/movimiento-notas'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "fechaRegistro": "2024-06-20",
+      "calificacion": 3.8,
+      "idNota": 1
+    }

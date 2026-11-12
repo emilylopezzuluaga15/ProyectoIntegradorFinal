@@ -1,0 +1,17 @@
+$kind: http-request
+name: Crear Materia
+order: 1000
+method: POST
+url: '{{baseUrl}}/api/materias'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "idMateria": "MAT001",
+      "nombreMateria": "Cálculo I"
+    }

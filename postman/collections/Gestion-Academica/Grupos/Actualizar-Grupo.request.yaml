@@ -1,0 +1,18 @@
+$kind: http-request
+name: Actualizar Grupo
+order: 4000
+method: PUT
+url: '{{baseUrl}}/api/grupos/{{id}}'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "idGrupo": "GRP001",
+      "nombreGrupo": "Grupo A Actualizado",
+      "idNivel": "NIV001"
+    }

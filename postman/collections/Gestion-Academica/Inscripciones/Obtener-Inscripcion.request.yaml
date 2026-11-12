@@ -1,0 +1,8 @@
+$kind: http-request
+name: Obtener Inscripcion
+order: 3000
+method: GET
+url: '{{baseUrl}}/api/inscripciones/{{id}}'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'

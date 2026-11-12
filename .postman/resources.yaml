@@ -1,0 +1,13 @@
+# Use this workspace to collaborate
+workspace:
+  id: 57f60864-a76d-40b6-88e6-ea79be2ef26e
+
+cloudResources:
+  collections:
+    ../postman/collections/Inventario - Spring Boot: 108e3216-a606-4470-b479-a2219754c872
+
+# All resources in the `postman/` folder are automatically registered in Local View.
+# Point to additional files outside the `postman/` folder to register them individually. Example:
+#localResources:
+#  collections:
+#    - ../tests/E2E Test Collection/

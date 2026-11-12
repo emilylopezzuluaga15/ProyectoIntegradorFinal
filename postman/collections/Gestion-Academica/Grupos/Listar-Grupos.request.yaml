@@ -1,0 +1,8 @@
+$kind: http-request
+name: Listar Grupos
+order: 2000
+method: GET
+url: '{{baseUrl}}/api/grupos'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'

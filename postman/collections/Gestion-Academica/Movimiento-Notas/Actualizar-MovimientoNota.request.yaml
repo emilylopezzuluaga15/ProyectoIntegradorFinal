@@ -1,0 +1,18 @@
+$kind: http-request
+name: Actualizar MovimientoNota
+order: 4000
+method: PUT
+url: '{{baseUrl}}/api/movimiento-notas/{{id}}'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "fechaRegistro": "2024-06-20",
+      "calificacion": 4.2,
+      "idNota": 1
+    }

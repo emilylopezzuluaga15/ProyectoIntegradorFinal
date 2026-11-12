@@ -1,0 +1,17 @@
+$kind: http-request
+name: Actualizar NivelMateria
+order: 4000
+method: PUT
+url: '{{baseUrl}}/api/niveles-materias/{{id}}'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "idNivel": "NIV001",
+      "idMateria": "MAT001"
+    }

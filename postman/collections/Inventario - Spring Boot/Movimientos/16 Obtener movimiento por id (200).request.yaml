@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{baseUrl}}/api/movimientos/1"
+method: GET
+order: 8000

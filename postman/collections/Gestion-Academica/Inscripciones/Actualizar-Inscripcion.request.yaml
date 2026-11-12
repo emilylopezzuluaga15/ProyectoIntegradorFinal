@@ -1,0 +1,19 @@
+$kind: http-request
+name: Actualizar Inscripcion
+order: 4000
+method: PUT
+url: '{{baseUrl}}/api/inscripciones/{{id}}'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "anioInscripcion": 2024,
+      "cohorte": 2,
+      "idEstudiante": "EST001",
+      "idGrupo": "GRP001"
+    }

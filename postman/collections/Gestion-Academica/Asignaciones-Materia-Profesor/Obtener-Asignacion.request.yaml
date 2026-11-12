@@ -1,0 +1,8 @@
+$kind: http-request
+name: Obtener Asignacion
+order: 3000
+method: GET
+url: '{{baseUrl}}/api/asignaciones-materia-profesor/{{id}}'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'

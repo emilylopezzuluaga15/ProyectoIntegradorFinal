@@ -1,0 +1,8 @@
+$kind: http-request
+name: Obtener Estudiante
+order: 3000
+method: GET
+url: '{{baseUrl}}/api/estudiantes/{{id}}'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'

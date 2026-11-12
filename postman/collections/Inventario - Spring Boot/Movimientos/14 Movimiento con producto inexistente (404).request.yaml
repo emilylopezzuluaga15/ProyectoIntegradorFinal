@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{baseUrl}}/api/movimientos"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "producto": { "id": 999 },
+      "cantidad": 2,
+      "tipo": "ENTRADA"
+    }
+order: 6000

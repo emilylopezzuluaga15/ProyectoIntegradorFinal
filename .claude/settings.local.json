@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -a; ls .idea 2>/dev/null; find . -maxdepth 2 -name '*project.build*'; cat .idea/misc.xml .idea/compiler.xml 2>/dev/null; ls -t ~/AppData/Local/JetBrains/*/log/idea.log 2>/dev/null | head -1)"
+    ]
+  }
+}

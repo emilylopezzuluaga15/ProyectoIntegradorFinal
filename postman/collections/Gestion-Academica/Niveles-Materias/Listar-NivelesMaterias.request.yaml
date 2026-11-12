@@ -1,0 +1,8 @@
+$kind: http-request
+name: Listar NivelesMaterias
+order: 2000
+method: GET
+url: '{{baseUrl}}/api/niveles-materias'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'

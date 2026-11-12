@@ -1,0 +1,6 @@
+# Copia este archivo como application-local.properties (está en .gitignore) y pon tus valores
+spring.datasource.password=tu_password_de_mysql
+# Mínimo 32 caracteres aleatorios
+app.jwt.secret=cambia-esto-por-un-secreto-largo-de-al-menos-32-caracteres
+# Contraseña del usuario "admin" que se crea la primera vez que arranca la app
+app.admin.password=Admin123*

@@ -1,0 +1,23 @@
+$kind: http-request
+name: Crear Estudiante
+order: 1000
+method: POST
+url: '{{baseUrl}}/api/estudiantes'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "idEstudiante": "EST001",
+      "nombreEstudiante": "Juan Pérez",
+      "fechaIngreso": "2024-01-15",
+      "genero": "M",
+      "celular": 3001234567,
+      "correo": "juan.perez@email.com",
+      "activo": true,
+      "estado": "Activo"
+    }

@@ -1,0 +1,8 @@
+$kind: http-request
+name: Eliminar MovimientoNota
+order: 5000
+method: DELETE
+url: '{{baseUrl}}/api/movimiento-notas/{{id}}'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'

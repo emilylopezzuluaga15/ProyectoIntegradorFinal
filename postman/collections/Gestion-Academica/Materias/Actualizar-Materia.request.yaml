@@ -1,0 +1,17 @@
+$kind: http-request
+name: Actualizar Materia
+order: 4000
+method: PUT
+url: '{{baseUrl}}/api/materias/{{id}}'
+headers:
+  - key: Authorization
+    value: 'Bearer {{token}}'
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "idMateria": "MAT001",
+      "nombreMateria": "Cálculo I Actualizado"
+    }
